@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceAbstraction.Models
 {
-    internal class Rectangular
+    internal class Rectangular:Figure
     {
         private double _width;
         private double _length;
@@ -32,6 +32,11 @@ namespace InterfaceAbstraction.Models
         {
             Width= width;
             Length= length;
+        }
+
+        public override void CalcArea()
+        {
+            Console.WriteLine($"Area of Rectangular: {Width*Length}");
         }
     }
 }

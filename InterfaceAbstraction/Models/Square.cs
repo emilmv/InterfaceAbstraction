@@ -6,7 +6,7 @@ namespace InterfaceAbstraction.Models
     {
         public override void CalcArea()
         {
-            Console.WriteLine($"Area of the Square: {Side*side}");
+            Console.WriteLine($"Area of the Square: {Side*Side}");
         }
         private double _side;
         public double Side
