@@ -4,10 +4,6 @@ namespace InterfaceAbstraction.Models
 {
     internal class Square : Figure
     {
-        public override void CalcArea()
-        {
-            Console.WriteLine($"Area of the Square: {Side*Side}");
-        }
         private double _side;
         public double Side
         {
@@ -21,6 +17,10 @@ namespace InterfaceAbstraction.Models
         public Square(double side)
         {
             Side = side;
+        }
+        public override void CalcArea()
+        {
+            Console.WriteLine($"Area of the Square: {Side * Side}");
         }
     }
 
