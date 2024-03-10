@@ -1,4 +1,5 @@
-﻿using InterfaceAbstraction.Models;
+﻿using InterfaceAbstraction.Constants;
+using InterfaceAbstraction.Models;
 using System.Reflection.Metadata.Ecma335;
 
 namespace InterfaceAbstraction
@@ -7,32 +8,32 @@ namespace InterfaceAbstraction
     {
         static void Main(string[] args)
         {
+        #region Task1
         Beginning:
             string input;
             int userInput;
 
-            Console.WriteLine("Please choose method you want to operate:");
-            Console.WriteLine("1. Area of Square");
-            Console.WriteLine("2. Area of Rectangular");
-            Console.WriteLine("3. Exit");
+            Console.WriteLine(ConsoleMessages.MethodChoose);
+            Console.WriteLine(ConsoleMessages.SquareMethod);
+            Console.WriteLine(ConsoleMessages.RectangularMethod);
+            Console.WriteLine(ConsoleMessages.ExitMethod);
             bool isCorrectInput = int.TryParse(Console.ReadLine(), out userInput);
             if (!isCorrectInput) goto Beginning;
             switch (userInput)
             {
                 case 1:
                 areaOfSquare:
-                    Console.WriteLine("Please enter side of Square");
+                    Console.WriteLine(ConsoleMessages.SquareSide);
                     bool isCorrectSide = double.TryParse(Console.ReadLine(), out double squareSide);
                     if (!isCorrectSide) goto areaOfSquare;
                     Square square = new(squareSide);
                     square.CalcArea();
                     goto Beginning;
-                    break;
                 case 2:
                 areaOfRectangular:
-                    Console.WriteLine("Please enter width of Rectangular");
+                    Console.WriteLine(ConsoleMessages.RectangularWidth);
                     bool isCorrectWidth = double.TryParse(Console.ReadLine(), out double rectangularWitdh);
-                    Console.WriteLine("Please enter length of Rectangular");
+                    Console.WriteLine(ConsoleMessages.RectangularLength);
                     bool isCorrectLength = double.TryParse(Console.ReadLine(), out double rectangularLength);
                     if (isCorrectWidth && isCorrectLength)
                     {
@@ -44,12 +45,9 @@ namespace InterfaceAbstraction
                 case 3:
                     break;
                 default: goto Beginning;
-
-
-
-
-
             }
+            #endregion
         }
     }
 }
+
