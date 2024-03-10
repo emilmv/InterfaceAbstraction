@@ -4,10 +4,4 @@
     {
         public abstract void CalcArea();
     }
-
-
-
-
-
-
 }

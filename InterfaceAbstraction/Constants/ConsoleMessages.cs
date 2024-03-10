@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace InterfaceAbstraction.Constants
+﻿namespace InterfaceAbstraction.Constants
 {
     internal class ConsoleMessages
     {
@@ -27,11 +21,5 @@ namespace InterfaceAbstraction.Constants
         public const string PasswordCondition4 = "Password should contain at least 1 number";
         public const string PasswordSuccess = "Password created successfully!";
         public const string Line = "=====================================";
-
-
-
-
-
-
     }
 }

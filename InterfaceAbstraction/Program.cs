@@ -1,7 +1,6 @@
 ﻿using InterfaceAbstraction.Constants;
 using InterfaceAbstraction.Models;
-using System.Security.Cryptography.X509Certificates;
-namespace InterfaceAbstraction
+    namespace InterfaceAbstraction
 {
     internal class Program
     {

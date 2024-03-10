@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-
-namespace InterfaceAbstraction.Models
+﻿namespace InterfaceAbstraction.Models
 {
     internal class Square : Figure
     {
@@ -23,6 +21,4 @@ namespace InterfaceAbstraction.Models
             Console.WriteLine($"Area of the Square: {Side * Side}");
         }
     }
-
-    
 }

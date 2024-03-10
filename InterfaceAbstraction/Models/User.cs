@@ -1,10 +1,5 @@
 ﻿using InterfaceAbstraction.Interface;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace InterfaceAbstraction.Models
 {
     internal class User : IAccount
@@ -41,7 +36,6 @@ namespace InterfaceAbstraction.Models
             }
             return false;
         }
-
         public void ShowInfo()
         {
             Console.WriteLine($"ID: {Id}");
