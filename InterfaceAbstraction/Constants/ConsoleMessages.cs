@@ -15,6 +15,18 @@ namespace InterfaceAbstraction.Constants
         public const string SquareSide = "Please enter side of Square";
         public const string RectangularWidth = "Please enter width of Rectangular";
         public const string RectangularLength = "Please enter length of Rectangular";
+        public const string Introduction = "Please follow below steps to complete your registration.";
+        public const string Id = "Please enter your ID:";
+        public const string ErrorMessage = "Something went wrong. Please try again.";
+        public const string FullName = "Please enter your Name & Surname:";
+        public const string Email = "Please enter your e-mail address:";
+        public const string Password = "Please create a password:";
+        public const string PasswordCondition1 = "Password should contain at least 8 charachters";
+        public const string PasswordCondition2 = "Password should contain at least 1 capital letter";
+        public const string PasswordCondition3 = "Password should contain at least 1 lower letter";
+        public const string PasswordCondition4 = "Password should contain at least 1 number";
+
+
 
 
 
