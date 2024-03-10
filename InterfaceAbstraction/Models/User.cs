@@ -9,15 +9,8 @@ namespace InterfaceAbstraction.Models
 {
     internal class User : IAccount
     {
-        private int _id = 1;
-        public int Id
-        {
-            get => _id;
-            private set
-            {
-                _id++;
-            }
-        }
+        private static int _id = 1;
+        public int Id { get; private set; } = _id++;
         public string FullName { get; set; }
         public string Email { get; set; }
         private string _password;

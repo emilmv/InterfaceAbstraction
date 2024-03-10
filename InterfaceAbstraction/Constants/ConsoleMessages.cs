@@ -9,9 +9,9 @@ namespace InterfaceAbstraction.Constants
     internal class ConsoleMessages
     {
         public const string MethodChoose = "Please choose method you want to operate:";
-        public const string SquareMethod = "1. Area of Square";
-        public const string RectangularMethod = "2. Area of Rectangular";
-        public const string ExitMethod = "3. Exit";
+        public const string SquareButton = "1. Area of Square";
+        public const string RectangularButton = "2. Area of Rectangular";
+        public const string ExitButton = "3. Exit";
         public const string SquareSide = "Please enter side of Square";
         public const string RectangularWidth = "Please enter width of Rectangular";
         public const string RectangularLength = "Please enter length of Rectangular";
@@ -25,6 +25,8 @@ namespace InterfaceAbstraction.Constants
         public const string PasswordCondition2 = "Password should contain at least 1 capital letter";
         public const string PasswordCondition3 = "Password should contain at least 1 lower letter";
         public const string PasswordCondition4 = "Password should contain at least 1 number";
+        public const string PasswordSuccess = "Password created successfully!";
+        public const string Line = "=====================================";
 
 
 
