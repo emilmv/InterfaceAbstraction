@@ -48,14 +48,6 @@ namespace InterfaceAbstraction
             #region Task2
 
             Console.WriteLine(ConsoleMessages.Introduction);
-        idInput:
-            Console.WriteLine(ConsoleMessages.Id);
-            bool isNumber = int.TryParse(Console.ReadLine(), out int id);
-            if (!isNumber)
-            {
-                Console.WriteLine(ConsoleMessages.ErrorMessage);
-                goto idInput;
-            }
         fullNameInput:
             Console.WriteLine(ConsoleMessages.FullName);
             string? fullName = Console.ReadLine();
@@ -78,9 +70,14 @@ namespace InterfaceAbstraction
             Console.WriteLine(ConsoleMessages.PasswordCondition2);
             Console.WriteLine(ConsoleMessages.PasswordCondition3);
             Console.WriteLine(ConsoleMessages.PasswordCondition4);
-            string? password = Console.ReadLine();
+            string password = "";
             User user = new User(email, password);
-            user.Id = id;
+            while(!user.PasswordChecker(password))
+            {
+                Console.WriteLine(ConsoleMessages.Password);
+                password = Console.ReadLine();
+            }
+            user.Password=password;
             user.FullName = fullName;
             user.Email = email;
             user.ShowInfo();
